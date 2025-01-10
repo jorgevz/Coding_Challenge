@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TaskService } from '../task.service';
 import { FormsModule } from '@angular/forms';
+import { Task } from '../../task-types';
 
 @Component({
   selector: 'app-task-update',
@@ -8,10 +9,13 @@ import { FormsModule } from '@angular/forms';
   imports: [FormsModule],
   templateUrl: './task-update.component.html',
 })
-export class TaskUpdateComponent {
-  /*
-   * Implement your update functionality in this component
-   */
 
-  constructor(private taskService: TaskService) {}
+/*
+   * Implement your update functionality in this component
+*/
+
+export class TaskUpdateComponent {
+
+constructor(private taskService: TaskService) {}
+
 }
